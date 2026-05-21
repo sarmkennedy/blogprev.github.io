@@ -46,3 +46,8 @@ p {
     font-weight: 800;
     color: hsl(0, 0%, 7%);
 }
+
+#author {
+    display: flex;
+    align-items: center;
+}
