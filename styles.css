@@ -37,7 +37,7 @@ h1 a:focus {
 
 #abstract {
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 #auth {
@@ -49,7 +49,7 @@ h1 a:focus {
 #author {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 #card {
@@ -57,20 +57,20 @@ h1 a:focus {
     padding: 24px;
     max-width: 340px;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 8px;
+    border-radius: 16px;
     border: 1px solid hsl(0, 0%, 7%);
     box-shadow: 5px 5px 0px hsl(0, 0%, 7%);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 #cat {
    font-weight: 800;
    background-color:  hsl(47,88%, 63%);
    color:  hsl(0, 0%, 7%);
-   padding: 5px;
+   padding: 10px 5px;
    border-radius: 4px;
    align-self: flex-start;
 }
