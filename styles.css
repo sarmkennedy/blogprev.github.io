@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Figtree';
-  src: url('./Resources/fonts/Figtree-VariableFont_wght.ttf') format('truetype-variations');
+  src: url('./Resources/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
   font-weight: 300 900;
   font-style: normal;
   font-display: swap;
@@ -22,8 +22,9 @@ h1, p {
 
 h1 a {
     font-size: 24px;
-    font-weight: 800px;
+    font-weight: 800;
     color: hsl(0, 0%, 7%);
+    text-decoration: none;
 }
 
 h1 a:hover {
@@ -59,6 +60,10 @@ h1 a:focus {
     border-radius: 8px;
     border: 1px solid hsl(0, 0%, 7%);
     box-shadow: 5px 5px 0px hsl(0, 0%, 7%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
 #cat {
@@ -67,6 +72,8 @@ h1 a:focus {
    color:  hsl(0, 0%, 7%);
    padding: 5px;
    border-radius: 4px;
+   display: flex;
+   align-self: flex-start;
 }
 
 #date {
