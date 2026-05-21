@@ -54,7 +54,7 @@ h1 a:focus {
 
 #card {
     margin: 0 auto;
-    padding: 24px;
+    padding: 20px;
     max-width: 340px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 16px;
@@ -73,8 +73,8 @@ h1 a:focus {
    padding: 5px 10px;
    border-radius: 4px;
    align-self: flex-start;
-   margin-top: 12px; 
-   margin-bottom: 7px;
+   margin-top: 10px; 
+   margin-bottom: 5px;
    font-size: 14px;
 }
 
