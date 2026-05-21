@@ -23,20 +23,21 @@ p {
 }
 
 #card {
-    max-width: 200px;
+    margin: 0 auto;
+    max-width: 450px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 8%;
     border: 2px solid hsl(0, 0%, 7%);
     box-shadow: 5px 5px 0px hsl(0, 0%, 7%);
 }
 
-#cat {
+p #cat {
    font-weight: 800;
    background-color:  hsl(47,88%, 63%);
    color:  hsl(0, 0%, 7%);
 }
 
-#auth {
+p #auth {
     font-weight: 800;
     color: hsl(0, 0%, 7%);
 }
