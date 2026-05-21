@@ -20,12 +20,13 @@ p {
 
 #abstract {
     margin: 0 auto;
+    border-radius: 3%;
 }
 
 #card {
     margin: 0 auto;
     padding: 24px;
-    max-width: 400px;
+    max-width: 3500px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 8%;
     border: 1px solid hsl(0, 0%, 7%);
