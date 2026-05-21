@@ -119,9 +119,9 @@ h1 a:focus {
 /*MOBILE SIZING*/
 @media (max-width: 395px) {
     .card {
-        max-width: 270px;
+        max-width: 250px;
     }
     .abstract {
-        height: 180px;
+        height: 170px;
     }
 }
