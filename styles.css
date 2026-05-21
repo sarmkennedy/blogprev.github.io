@@ -51,3 +51,7 @@ p {
     display: flex;
     align-items: center;
 }
+
+#greg {
+    width: 70%;
+}
