@@ -74,6 +74,7 @@ h1 a:focus {
    border-radius: 4px;
    align-self: flex-start;
    margin-top: 10px; 
+   font-size: 14px;
 }
 
 #date {
