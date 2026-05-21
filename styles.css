@@ -26,7 +26,7 @@ p {
 #card {
     margin: 0 auto;
     padding: 24px;
-    max-width: 3500px;
+    max-width: 350px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 8%;
     border: 1px solid hsl(0, 0%, 7%);
