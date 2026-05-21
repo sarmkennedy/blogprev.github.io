@@ -38,6 +38,8 @@ h1 a:focus {
 #abstract {
     margin: 0px auto;
     border-radius: 12px;
+    height: 200px;
+    object-fit: cover;
 }
 
 #auth {
