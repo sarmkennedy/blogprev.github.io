@@ -20,7 +20,7 @@ h1, p {
     margin: 0;
 }
 
-h1 {
+h1 a {
     font-size: 24px;
     font-weight: 800px;
     color: hsl(0, 0%, 7%);
@@ -71,6 +71,7 @@ h1 a:focus {
 
 #date {
     font-size: 14px;
+    color: hsl(0, 0%, 42%)
 }
 
 #desc {
