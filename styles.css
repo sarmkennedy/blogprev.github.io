@@ -10,27 +10,30 @@
 :root {
     /*COLORS*/
         /*PRIMARY*/
-    --lightRed: hsl(0, 100%, 67%);
-    --yellowOrange: hsl(39, 100%, 56%);
-    --tealGreen: hsl(166, 100%, 37%);
-    --cobaltBlue: hsl(234, 85%, 45%);
+    --light-red: hsl(0, 100%, 67%);
+    --yellow-orange: hsl(39, 100%, 56%);
+    --teal-green: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
         /*GRADIENTS*/
-    --slateBlue: hsl(252, 100%, 67%);
-    --royalBlue: hsl(241, 81%, 54%);
-    --violetBlue: hsla(256, 72%, 46%, 1);
-    --persianBlue: hsla(241, 72%, 46%, 0);
+    --slate-blue: hsl(252, 100%, 67%);
+    --royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
         /*NEUTRALS*/
     --white: hsl(0, 0%, 100%);
-    --paleBlue: hsl(221, 100%, 96%);
-    --lightLavender: hsl(241, 100%, 89%);
-    --grayBlue: hsl(224, 30%, 27%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --gray-blue: hsl(224, 30%, 27%);
 
     /*SPACING*/
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
 }
  
 /*BODY/LAYOUT*/
 body {
-    background-color: var(--lightLavender);
+    background-color: var(--light-lavender);
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -41,30 +44,45 @@ body {
 }
 
 /*RESETS*/
-h1, p {
+h2, p {
     margin: 0;
 }
 
 /*RESULTS SECTION*/
 
-h1 {
-    color: var(--lightLavender);
+.results {
+    background: linear-gradient(to bottom, var(--violet-blue), var(--royal-blue));
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: var(--space-md);
+    text-align: center;
+}
+
+h2 {
+    color: var(--light-lavender);
     font-size: 18px;
     font-weight: 500;
 }
 
 .circle {
-    
+    border-radius: 50%;
+    display: flex;
+
+}
+
+.score {
+    font-size: 36px;
+    color: var(--white);
 }
 
 /*SUMMARY SECTION*/
 
 /*MOBILE SIZING*/
-@media (max-width: 385px) {
-    .card {
-        max-width: ;
+@media (min-width: 365px) {
+    .results {
+        min-width: ;
     }
-    .abstract {
-        height: ;
+    .summary {
+        min-width: ;
     }
 }
