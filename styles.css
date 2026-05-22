@@ -47,14 +47,24 @@ h1, p {
 
 /*RESULTS SECTION*/
 
+h1 {
+    color: var(--lightLavender);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.circle {
+    
+}
+
 /*SUMMARY SECTION*/
 
 /*MOBILE SIZING*/
-@media (max-width: 395px) {
+@media (max-width: 385px) {
     .card {
-        max-width: 275px;
+        max-width: ;
     }
     .abstract {
-        height: 160px;
+        height: ;
     }
 }
