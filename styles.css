@@ -28,8 +28,13 @@
     /*SPACING*/
     --space-sm: 12px;
     --space-md: 18px;
-    --space-lg: 24px;
-    --space-xlg: 32px;
+    --space-lg: 32px;
+    --space-xlg: 56px;
+
+    /*FONT WEIGHT*/
+    --f-s: 500;
+    --f-m: 700;
+    --f-l: 800;
 }
  
 /*BODY/LAYOUT*/
@@ -37,7 +42,7 @@ body {
     background-color: var(--pale-blue);
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: var(--f-s);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -60,18 +65,20 @@ h2, p {
 
 .results {
     background: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue));
-    padding: var(--space-md) var(--space-xlg);
+    padding: var(--space-lg) var(--space-xlg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 10px;
+    width: 250px;
 }
 
 .results h2 {
     color: var(--light-lavender);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--f-s);
 }
 
 .circle {
@@ -83,27 +90,31 @@ h2, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0px;
 }
 
 .score {
-    font-size: 36px;
+    font-size: 48px;
     color: var(--white);
+    font-weight: var(--f-m); 
 }
 
 .total {
     color: var(--slate-blue);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--f-s);
 }
 
 .rank {
     color: var(--white);
     font-size: 24px;
+    font-weight: var(--f-s);
 }
 
 .eval {
     color: var(--light-lavender);
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: var(--f-s);
 }
 
 /*SUMMARY SECTION*/ 
