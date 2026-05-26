@@ -26,14 +26,15 @@
     --gray-blue: hsl(224, 30%, 27%);
 
     /*SPACING*/
-    --space-sm: 8px;
-    --space-md: 16px;
+    --space-sm: 12px;
+    --space-md: 18px;
     --space-lg: 24px;
+    --space-xlg: 32px;
 }
  
 /*BODY/LAYOUT*/
 body {
-    background-color: var(--light-lavender);
+    background-color: var(--pale-blue);
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -51,22 +52,25 @@ h2, p {
 .card {
     background-color: var(--white);
     border-radius: 12px;
-    box-shadow: 10px 10px 10px var(--gray-blue);
+    box-shadow: 0 30px 50px var(--light-lavender);
+    overflow: hidden;
 }
 
 /*RESULTS SECTION*/
 
 .results {
-    background: linear-gradient(to bottom, var(--violet-blue), var(--royal-blue));
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    padding: var(--space-lg);
+    background: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue));
+    padding: var(--space-md) var(--space-xlg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .results h2 {
     color: var(--light-lavender);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -75,7 +79,7 @@ h2, p {
     width: 140px;
     height: 140px;
     display: flex;
-    background: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+    background: linear-gradient(to bottom, var(--violet-blue), var(--royal-blue));
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -86,11 +90,36 @@ h2, p {
     color: var(--white);
 }
 
-.rank {
-
+.total {
+    color: var(--slate-blue);
+    font-size: 14px;
+    font-weight: 500;
 }
 
-/*SUMMARY SECTION*/
+.rank {
+    color: var(--white);
+    font-size: 24px;
+}
+
+.eval {
+    color: var(--light-lavender);
+    font-size: 16px;
+}
+
+/*SUMMARY SECTION*/ 
+
+.summary {
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.summary h2 {
+    font-size: 18px;
+    color: var(--gray-blue);
+}
 
 /*PLACEHOLDER
 /*MOBILE SIZING*/
