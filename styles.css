@@ -54,11 +54,11 @@ h2, p {
     background: linear-gradient(to bottom, var(--violet-blue), var(--royal-blue));
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    padding: var(--space-md);
+    padding: var(--space-lg);
     text-align: center;
 }
 
-h2 {
+.results h2 {
     color: var(--light-lavender);
     font-size: 18px;
     font-weight: 500;
@@ -66,8 +66,13 @@ h2 {
 
 .circle {
     border-radius: 50%;
+    width: 140px;
+    height: 140px;
     display: flex;
-
+    background: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .score {
@@ -75,14 +80,18 @@ h2 {
     color: var(--white);
 }
 
+.rank {
+
+}
+
 /*SUMMARY SECTION*/
 
+/*PLACEHOLDER
 /*MOBILE SIZING*/
-@media (min-width: 365px) {
+/*PLACEHOLDER
+@media (min-width: 400px) {
     .results {
-        min-width: ;
     }
     .summary {
-        min-width: ;
     }
-}
+}*/
