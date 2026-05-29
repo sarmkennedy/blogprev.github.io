@@ -94,7 +94,7 @@ h2, p {
 }
 
 .score {
-    font-size: 48px;
+    font-size: 52px;
     color: var(--white);
     font-weight: var(--f-m); 
 }
@@ -130,6 +130,20 @@ h2, p {
 .summary h2 {
     font-size: 18px;
     color: var(--gray-blue);
+}
+
+button {
+    border-radius: 24px;
+    border: none;
+    background-color: var(--gray-blue);
+    color: var(--white);
+    width: 70%;
+    height: 40px;
+    font-family: inherit;
+    font-size: 14px;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
 }
 
 /*PLACEHOLDER
