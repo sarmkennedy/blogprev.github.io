@@ -38,6 +38,10 @@
     --sp-l: 30px;
     --sp-xl: 50px;
 
+    /*BORDER RADII*/
+    --rad-s: 12px;
+    --rad-l: 24px;
+
     /*FONT SIZE*/
     --fs-xs: 14px;
     --fs-s: 16px;
@@ -49,6 +53,10 @@
     --f-s: 500;
     --f-m: 700;
     --f-l: 800;
+
+    /*MISC SIZES*/
+    --circle: 140px;
+    --button-height: 50px;
 }
  
 /*RESETS*/
@@ -91,8 +99,8 @@ body {
 .results {
     background: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue));
     padding: var(--sp-l) var(--sp-xl);
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: var(--rad-l);
+    border-bottom-right-radius: var(--rad-l);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,10 +119,10 @@ body {
 
 .circle {
     border-radius: 50%;
-    width: 140px;
-    height: 140px;
+    width: var(--circle);
+    height: var(--circle);
     display: flex;
-    background: radial-gradient(circle at top, var(--violet-blue), var(--persian-blue));
+    background: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -193,42 +201,42 @@ body {
 .react {
     background-color: var(--light-red-t);
     color: var(--light-red);
-    border-radius: 12px;
+    border-radius: var(--rad-s);
 }
 
 .memory {
     background-color: var(--yellow-orange-t);
     color: var(--yellow-orange);
-    border-radius: 12px;
+    border-radius: var(--rad-s);
 }
 
 .verbal {
     background-color: var(--teal-green-t);
     color: var(--teal-green);
-    border-radius: 12px;
+    border-radius: var(--rad-s);
 }
 
 .visual {
     background-color: var(--cobalt-blue-t);
     color: var(--cobalt-blue);
-    border-radius: 12px;
+    border-radius: var(--rad-s);
 }
 
 button {
-    border-radius: 24px;
+    border-radius: var(--rad-l);
     border: none;
     background-color: var(--gray-blue);
     color: var(--white);
     font-weight: 500;
     width: 100%;
-    height: 50px;
+    height: var(--button-height);
     font-family: inherit;
     font-size: var(--fs-s);
     text-align: center;
     cursor: pointer;
 }
 
-button:hover, button:focus {
+button:hover, button:focus-visible {
     background: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue));
 
 }
@@ -239,7 +247,7 @@ button:hover, button:focus {
 @media (min-width: 765px) {
     .card {
         min-height: auto;
-        border-radius: 24px;
+        border-radius: var(--rad-l);
         box-shadow: 0 var(--sp-l) var(--sp-xl) var(--light-lavender);
         max-width: 600px;
     }
