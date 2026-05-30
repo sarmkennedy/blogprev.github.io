@@ -14,6 +14,10 @@
     --yellow-orange: hsl(39, 100%, 56%);
     --teal-green: hsl(166, 100%, 37%);
     --cobalt-blue: hsl(234, 85%, 45%);
+    --light-red-t: hsla(0, 100%, 67%, 0.1);
+    --yellow-orange-t: hsla(39, 100%, 56%, 0.1);
+    --teal-green-t: hsla(166, 100%, 37%, 0.1);
+    --cobalt-blue-t: hsla(234, 85%, 45%, 0.1);
         /*GRADIENTS*/
     --slate-blue: hsl(252, 100%, 67%);
     --royal-blue: hsl(241, 81%, 54%);
@@ -151,31 +155,49 @@ ul {
 
 li {
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     display: flex;
     justify-content: space-between;
     width: 85%;
     font-family: inherit;
     font-size: 16px;
+    font-weight: var(--f-m);
 }
 
 .score-row {
 }
 
+.num {
+    color: var(--gray-blue);
+}
+
+.outof {
+    color: var(--gray-blue);
+    opacity: 50%;
+}
+
 .react {
-    background-color: hsla(0, 100%, 67%, 0.1);
+    background-color: var(--light-red-t);
+    color: var(--light-red);
+    border-radius: 12px;
 }
 
 .memory {
-
+    background-color: var(--yellow-orange-t);
+    color: var(--yellow-orange);
+    border-radius: 12px;
 }
 
 .verbal {
-
+    background-color: var(--teal-green-t);
+    color: var(--teal-green);
+    border-radius: 12px;
 }
 
 .visual {
-
+    background-color: var(--cobalt-blue-t);
+    color: var(--cobalt-blue);
+    border-radius: 12px;
 }
 
 button {
@@ -184,10 +206,10 @@ button {
     background-color: var(--gray-blue);
     color: var(--white);
     font-weight: 500;
-    width: 70%;
-    height: 40px;
+    width: 90%;
+    height: 50px;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     align-self: center;
     cursor: pointer;
