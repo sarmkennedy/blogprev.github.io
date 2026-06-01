@@ -50,9 +50,9 @@
     --fs-xl: 52px;
 
     /*FONT WEIGHT*/
-    --f-s: 500;
-    --f-m: 700;
-    --f-l: 800;
+    --fw-reg: 500;
+    --fw-bold: 700;
+    --fw-xbold: 800;
 
     /*MISC SIZES*/
     --circle: 140px;
@@ -79,7 +79,7 @@ body {
     background-color: var(--pale-blue);
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: var(--fs-m);
-    font-weight: var(--f-s);
+    font-weight: var(--fw-reg);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@ body {
 .results h2 {
     color: var(--light-lavender);
     font-size: var(--fs-m);
-    font-weight: var(--f-s);
+    font-weight: var(--fw-reg);
     margin-bottom: var(--sp-s);
 }
 
@@ -133,12 +133,12 @@ body {
 .score {
     font-size: var(--fs-xl);
     color: var(--white);
-    font-weight: var(--f-m); 
+    font-weight: var(--fw-bold); 
 }
 
 .total {
     font-size: var(--fs-xs);
-    font-weight: var(--f-s);
+    font-weight: var(--fw-reg);
     color: var(--light-lavender);
     opacity: 0.5;
 }
@@ -146,14 +146,14 @@ body {
 .rank {
     color: var(--white);
     font-size: var(--fs-l);
-    font-weight: var(--f-s);
+    font-weight: var(--fw-reg);
     margin-top: var(--sp-s);
 }
 
 .eval {
     color: var(--light-lavender);
     font-size: var(--fs-xs);
-    font-weight: var(--f-s);
+    font-weight: var(--fw-reg);
     padding: var(--sp-s);
 }
 
@@ -170,7 +170,7 @@ body {
 .summary h2 {
     font-size: var(--fs-m);
     color: var(--gray-blue);
-    font-weight: var(--f-m);
+    font-weight: var(--fw-bold);
 }
 
 .summary li {
@@ -180,7 +180,8 @@ body {
     align-items: center;
     font-family: inherit;
     font-size: var(--fs-s);
-    font-weight: var(--f-s);
+    font-weight: var(--fw-reg);
+    border-radius: var(--rad-s);
 }
 
 .type {
@@ -201,25 +202,21 @@ body {
 .react {
     background-color: var(--light-red-t);
     color: var(--light-red);
-    border-radius: var(--rad-s);
 }
 
 .memory {
     background-color: var(--yellow-orange-t);
     color: var(--yellow-orange);
-    border-radius: var(--rad-s);
 }
 
 .verbal {
     background-color: var(--teal-green-t);
     color: var(--teal-green);
-    border-radius: var(--rad-s);
 }
 
 .visual {
     background-color: var(--cobalt-blue-t);
     color: var(--cobalt-blue);
-    border-radius: var(--rad-s);
 }
 
 button {
@@ -227,7 +224,7 @@ button {
     border: none;
     background-color: var(--gray-blue);
     color: var(--white);
-    font-weight: 500;
+    font-weight: var(--fw-reg);
     width: 100%;
     height: var(--button-height);
     font-family: inherit;
@@ -241,14 +238,21 @@ button:hover, button:focus-visible {
 
 }
 
-/*PLACEHOLDER
 /*MEDIA QUERIES*/
-/*PLACEHOLDER
 @media (min-width: 765px) {
     .card {
         min-height: auto;
         border-radius: var(--rad-l);
         box-shadow: 0 var(--sp-l) var(--sp-xl) var(--light-lavender);
         max-width: 600px;
+        display: flex;
+        flex-direction: row;
     }
-}*/
+    .results {
+        width: 49%;
+        border-top-right-radius: var(--rad-l);
+    }
+    .summary {
+        width: 51%;
+    }
+}
