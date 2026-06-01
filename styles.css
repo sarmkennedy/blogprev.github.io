@@ -192,6 +192,7 @@ body {
 
 .num {
     color: var(--gray-blue);
+    font-weight: var(--fw-bold);
 }
 
 .outof {
