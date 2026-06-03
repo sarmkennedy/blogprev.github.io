@@ -3,25 +3,25 @@
 @theme {
     /*COLOURS*/
         /*PRIMARY*/
-    --colour-purple-brand: hsl(246, 80%, 60%);
-    --colour-work: hsl(15, 100%, 70%);
-    --colour-play: hsl(195, 74%, 62%);
-    --colour-study: hsl(348, 100%, 68%);
-    --colour-exercise: hsl(145, 58%, 55%);
-    --colour-social: hsl(264, 64%, 52%);
-    --colour-self-care: hsl(43, 84%, 65%);
+    --color-purple-brand: hsl(246, 80%, 60%);
+    --color-work: hsl(15, 100%, 70%);
+    --color-play: hsl(195, 74%, 62%);
+    --color-study: hsl(348, 100%, 68%);
+    --color-exercise: hsl(145, 58%, 55%);
+    --color-social: hsl(264, 64%, 52%);
+    --color-self-care: hsl(43, 84%, 65%);
         /*NEUTRALS*/
-    --colour-navy-950: hsl(226, 43%, 10%);
-    --colour-navy-900: hsl(235, 46%, 20%);
-    --colour-purple-500: hsl(235, 45%, 61%);
-    --colour-navy-200: hsl(236, 100%, 87%);
+    --color-navy-950: hsl(226, 43%, 10%);
+    --color-navy-900: hsl(235, 46%, 20%);
+    --color-purple-500: hsl(235, 45%, 61%);
+    --color-navy-200: hsl(236, 100%, 87%);
     
     /*FONT*/
     --font-rubik: "Rubik", sans-serif;
     /*FONT SIZE*/
-    --fs-titles: 18px;
+    --font-size-titles: 18px;
     /*FONT WEIGHTS*/
-    --fw-thin: 300;
-    --fw-reg: 400;
-    --fw-bold: 500;
+    --font-weight-thin: 300;
+    --font-weight-reg: 400;
+    --font-weight-bold: 500;
 }

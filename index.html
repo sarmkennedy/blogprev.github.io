@@ -10,20 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="bg-navy-950 text-white font-rubik p-6 min-h-screen flex items-center justify-center">
     <main>
-      <article class="">
-        <div class="user-info">
-          <img alt="Photo of user" src="./Resources/images/image-jeremy.png"/>
+      <article class="rounded-2xl p-6 flex flex-col gap-3">
+        <div class="flex flex-col gap-3 bg-purple-brand rounded-2xl pr-8 pl-8 pt-20 pb-25 z-10">
+          <img class="w-16 h-16 rounded-full border-2 border-white" alt="Photo of user" src="./Resources/images/image-jeremy.png"/>
           <h1>
-            <span>Report for</span>
-            <span>Jeremy Robson</span>
+            <span class="block text-sm text-navy-200">Report for</span>
+            <span class="block text-4xl font-thin">Jeremy Robson</span>
           </h1>
         </div>
-        <nav class="timeframes">
-          <button>Daily</button>
-          <button>Weekly</button>
-          <button>Monthly</button>
+        <nav class="timeframes flex flex-col gap-3 bg-navy-900 rounded-b-2xl pt-10 pr-8 pl-8 pb-8 -mt-6 z-0">
+          <button class="text-left text-navy-200 hover:text-white font-reg">Daily</button>
+          <button class="text-left text-navy-200 hover:text-white font-reg">Weekly</button>
+          <button class="text-left text-navy-200 hover:text-white font-reg">Monthly</button>
         </nav>
       </article>
 
