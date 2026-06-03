@@ -6,12 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Time Tracking Dashboard</title>
     <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
-      <div class="bg-work p-8 text-white text-2xl rounded-lg">
-          Hello, Tailwind! 
-      </div>
+      <article class="">
+        <div class="user-info">
+          <img alt="Photo of user" src="./Resources/images/image-jeremy.png"/>
+          <h1>
+            <span>Report for</span>
+            <span>Jeremy Robson</span>
+          </h1>
+        </div>
+        <nav class="timeframes">
+          <button>Daily</button>
+          <button>Weekly</button>
+          <button>Monthly</button>
+        </nav>
+      </article>
+
+      <ul class="activities">
+
+        <li class="activity work">
+          <div class="activity-card">
+            <header>
+              <h2>Work</h2>
+              <button aria-label="Open menu">
+                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
+              </button>
+            </header>
+            <p class="current"><span class="hours">32</span>hrs</p>
+            <p class="previous">Last Week - <span class="prev-hours">36</span>hrs</p>
+          </div>
+        </li>
+        
+        <!--
+        <li class="activity play">
+          <div class="activity-card">
+            <header>
+              <h2>Play</h2>
+              <button aria-label="Open menu">
+                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
+              </button>
+            </header>
+            <p class="current"><span class="hours">10</span>hrs</p>
+            <p class="previous">Last Week - <span class="prev-hours">8</span>hrs</p>
+          </div>
+        </li>
+
+        <li class="activity study">
+          <div class="activity-card">
+            <header>
+              <h2>Study</h2>
+              <button aria-label="Open menu">
+                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
+              </button>
+            </header>
+            <p class="current"><span class="hours">4</span>hrs</p>
+            <p class="previous">Last Week - <span class="prev-hours">7</span>hrs</p>
+          </div>
+        </li>
+
+        <li class="activity exercise">
+          <div class="activity-card">
+            <header>
+              <h2>Exercise</h2>
+              <button aria-label="Open menu">
+                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
+              </button>
+            </header>
+            <p class="current"><span class="hours">4</span>hrs</p>
+            <p class="previous">Last Week - <span class="prev-hours">5</span>hrs</p>
+          </div>
+        </li>
+
+        <li class="activity social">
+          <div class="activity-card">
+            <header>
+              <h2>Social</h2>
+              <button aria-label="Open menu">
+                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
+              </button>
+            </header>
+            <p class="current"><span class="hours">5</span>hrs</p>
+            <p class="previous">Last Week - <span class="prev-hours">10</span>hrs</p>
+          </div>
+        </li>
+
+        <li class="activity self-care">
+          <div class="activity-card">
+            <header>
+              <h2>Self Care</h2>
+              <button aria-label="Open menu">
+                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
+              </button>
+            </header>
+            <p class="current"><span class="hours">2</span>hrs</p>
+            <p class="previous">Last Week - <span class="prev-hours">2</span>hrs</p>
+          </div>
+        </li>
+        -->
+
+      </ul>
     </main>
   </body>
 </html>
