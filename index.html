@@ -28,16 +28,18 @@
       </article>
 
       <ul class="activities">
-        <li class="activity-work bg-work rounded-2xl">
-          <div class="activity-card">
-            <header>
+        <li class="activity bg-work rounded-2xl p-8 overflow-hidden bg-[url('../Resources/images/icon-work.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+          <div class="activity-card rounded-2xl hover:bg-purple-500 cursor-pointer">
+            <header class="flex flex-row justify-between">
               <h2>Work</h2>
               <button aria-label="Open menu">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
             </header>
-            <p class="current"><span class="hours">32</span>hrs</p>
-            <p class="previous">Last Week - <span class="prev-hours">36</span>hrs</p>
+            <div class="flex flex-row md:flex-col justify-between">
+              <p class="current text-2xl"><span class="hours">32</span>hrs</p>
+              <p class="previous text-sm">Last Week - <span class="prev-hours">36</span>hrs</p>
+            </div>
           </div>
         </li>
         
