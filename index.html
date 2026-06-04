@@ -21,28 +21,43 @@
           </h1>
         </div>
         <nav class="timeframes flex flex-row md:flex-col justify-between items-center p-6">
-          <button class="text-left text-navy-200 hover:text-white font-reg">Daily</button>
-          <button class="text-left text-navy-200 hover:text-white font-reg">Weekly</button>
-          <button class="text-left text-navy-200 hover:text-white font-reg">Monthly</button>
+          <button class="text-left text-navy-200 hover:text-white font-thin">Daily</button>
+          <button class="text-left text-navy-200 hover:text-white font-thin">Weekly</button>
+          <button class="text-left text-navy-200 hover:text-white font-thin">Monthly</button>
         </nav>
       </article>
 
-      <ul class="activities list-none p-0 flex flex-col gap:2 mt-6">
+      <ul class="activities list-none p-0 flex flex-col gap-6 mt-6">
+        
         <li class="activity bg-work rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-work.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
-          <div class="activity-card rounded-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2">
+          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2">
             <header class="flex flex-row justify-between items-center">
               <h2 class="text-titles font-bold">Work</h2>
-              <button aria-label="Open menu">
+              <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
             </header>
             <div class="flex flex-row md:flex-col justify-between items-center">
               <p class="current text-3xl font-thin"><span class="hours">32</span>hrs</p>
-              <p class="previous text-sm">Last Week - <span class="prev-hours">36</span>hrs</p>
+              <p class="previous text-sm text-navy-200 font-thin">Last Week - <span class="prev-hours">36</span>hrs</p>
             </div>
           </div>
         </li>
         
+        <li class="activity bg-play rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-play.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2">
+            <header class="flex flex-row justify-between items-center">
+              <h2 class="text-titles font-bold">Play</h2>
+              <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
+                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
+              </button>
+            </header>
+            <div class="flex flex-row md:flex-col justify-between items-center">
+              <p class="current text-3xl font-thin"><span class="hours">10</span>hrs</p>
+              <p class="previous text-sm text-navy-200 font-thin">Last Week - <span class="prev-hours">8</span>hrs</p>
+            </div>
+          </div>
+        </li>
         <!--
         <li class="activity play">
           <div class="activity-card">
