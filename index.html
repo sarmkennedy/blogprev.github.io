@@ -10,180 +10,141 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
+
   <body class="bg-navy-950 text-white font-rubik p-6 min-h-screen flex items-center justify-center">
-    <main class="w-full max-w-xs">
-      <article class="rounded-2xl flex flex-col overflow-hidden bg-navy-900">
-        <div class="flex flex-row md:flex-col items-center gap-6 p-6 bg-purple-brand rounded-2xl">
+    <main class="w-full max-w-xs md:max-w-5xl md:grid md:grid-cols-4 
+                md:grid-rows-2 md:gap-6">
+
+      <!--SIDE BAR-->
+      <article class="rounded-2xl flex flex-col overflow-hidden bg-navy-900 
+                      md:row-span-2">
+          <!--USER SECT.-->
+        <div class="flex flex-row md:flex-col items-center justify-center 
+                    md:justify-start md:items-start gap-4 md:gap-8 p-6 md:pb-20 bg-purple-brand rounded-2xl">
+          <!--AVATAR-->  
           <img class="w-16 h-16 rounded-full border-2 border-white" alt="Photo of user" src="./Resources/images/image-jeremy.png"/>
+          <!--USER NAME-->  
           <h1>
             <span class="block text-sm text-navy-200">Report for</span>
             <span class="block text-2xl md:text-4xl font-thin">Jeremy Robson</span>
           </h1>
         </div>
-        <nav class="timeframes flex flex-row md:flex-col justify-between items-center p-6">
+        <!--NAVIGATION-->
+        <nav class="timeframes flex flex-row justify-center items-center gap-12 p-6 
+                    md:items-start md:flex-col md:gap-4">
           <button class="text-left text-navy-200 hover:text-white font-thin">Daily</button>
           <button class="text-left text-navy-200 hover:text-white font-thin">Weekly</button>
           <button class="text-left text-navy-200 hover:text-white font-thin">Monthly</button>
         </nav>
+
       </article>
 
-      <ul class="activities list-none p-0 flex flex-col gap-6 mt-6">
-        
-        <li class="activity bg-work rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-work.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
-          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2">
+
+    <!--ACTIVITY CARDS-->
+      <ul class="activities list-none p-0 flex flex-col gap-6 mt-6
+                md:grid md:grid-cols-3 md:grid-rows-2 md:col-span-3 row-span-2 md:gap-6 md:mt-0">
+
+        <!--WORK-->
+        <li class="activity bg-work rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-work.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
               <h2 class="text-titles font-bold">Work</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
             </header>
-            <div class="flex flex-row md:flex-col justify-between items-center">
-              <p class="current text-3xl font-thin"><span class="hours">32</span>hrs</p>
+            <div class="flex flex-row justify-between items-center 
+                        md:flex-col md:justify-start md:items-start md:gap-3">
+              <p class="current text-4xl md:text-5xl font-thin"><span class="hours">32</span>hrs</p>
               <p class="previous text-sm text-navy-200 font-thin">Last Week - <span class="prev-hours">36</span>hrs</p>
             </div>
           </div>
         </li>
-        
-        <li class="activity bg-play rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-play.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
-          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2">
+
+        <!--PLAY-->
+        <li class="activity bg-play rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-play.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
               <h2 class="text-titles font-bold">Play</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
             </header>
-            <div class="flex flex-row md:flex-col justify-between items-center">
-              <p class="current text-3xl font-thin"><span class="hours">10</span>hrs</p>
+            <div class="flex flex-row justify-between items-center
+                        md:flex-col md:justify-start md:items-start md:gap-3">
+              <p class="current text-4xl md:text-5xl font-thin"><span class="hours">10</span>hrs</p>
               <p class="previous text-sm text-navy-200 font-thin">Last Week - <span class="prev-hours">8</span>hrs</p>
             </div>
           </div>
         </li>
 
-        <li class="activity bg-study rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-study.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
-          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2">
+        <!--STUDY-->
+        <li class="activity bg-study rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-study.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
               <h2 class="text-titles font-bold">Study</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
             </header>
-            <div class="flex flex-row md:flex-col justify-between items-center">
-              <p class="current text-3xl font-thin"><span class="hours">4</span>hrs</p>
+            <div class="flex flex-row justify-between items-center
+                        md:flex-col md:justify-start md:items-start md:gap-3">
+              <p class="current text-4xl md:text-5xl font-thin"><span class="hours">4</span>hrs</p>
               <p class="previous text-sm text-navy-200 font-thin">Last Week - <span class="prev-hours">7</span>hrs</p>
             </div>
           </div>
         </li>
 
-        <li class="activity bg-exercise rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-exercise.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
-          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2">
+        <!--EXERCISE-->
+        <li class="activity bg-exercise rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-exercise.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
               <h2 class="text-titles font-bold">Exercise</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
             </header>
-            <div class="flex flex-row md:flex-col justify-between items-center">
-              <p class="current text-3xl font-thin"><span class="hours">4</span>hrs</p>
+            <div class="flex flex-row justify-between items-center
+                        md:flex-col md:justify-start md:items-start md:gap-3">
+              <p class="current text-4xl md:text-5xl font-thin"><span class="hours">4</span>hrs</p>
               <p class="previous text-sm text-navy-200 font-thin">Last Week - <span class="prev-hours">5</span>hrs</p>
             </div>
           </div>
         </li>
         
-         <li class="activity bg-social rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-social.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
-          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2">
+        <!--SOCIAL-->
+         <li class="activity bg-social rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-social.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
               <h2 class="text-titles font-bold">Social</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
             </header>
-            <div class="flex flex-row md:flex-col justify-between items-center">
-              <p class="current text-3xl font-thin"><span class="hours">5</span>hrs</p>
+            <div class="flex flex-row justify-between items-center
+                        md:flex-col md:justify-start md:items-start md:gap-3">
+              <p class="current text-4xl md:text-5xl font-thin"><span class="hours">5</span>hrs</p>
               <p class="previous text-sm text-navy-200 font-thin">Last Week - <span class="prev-hours">10</span>hrs</p>
             </div>
           </div>
         </li>
 
-        <li class="activity bg-self-care rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-self-care.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
-          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2">
+        <!--SELF CARE-->
+        <li class="activity bg-self-care rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-self-care.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+          <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
               <h2 class="text-titles font-bold">Self Care</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
             </header>
-            <div class="flex flex-row md:flex-col justify-between items-center">
-              <p class="current text-3xl font-thin"><span class="hours">2</span>hrs</p>
+            <div class="flex flex-row justify-between items-center
+                        md:flex-col md:justify-start md:items-start md:gap-3">
+              <p class="current text-4xl md:text-5xl font-thin"><span class="hours">2</span>hrs</p>
               <p class="previous text-sm text-navy-200 font-thin">Last Week - <span class="prev-hours">2</span>hrs</p>
             </div>
           </div>
         </li>
-        <!--
-        <li class="activity play">
-          <div class="activity-card">
-            <header>
-              <h2>Play</h2>
-              <button aria-label="Open menu">
-                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
-              </button>
-            </header>
-            <p class="current"><span class="hours">10</span>hrs</p>
-            <p class="previous">Last Week - <span class="prev-hours">8</span>hrs</p>
-          </div>
-        </li>
-
-        <li class="activity study">
-          <div class="activity-card">
-            <header>
-              <h2>Study</h2>
-              <button aria-label="Open menu">
-                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
-              </button>
-            </header>
-            <p class="current"><span class="hours">4</span>hrs</p>
-            <p class="previous">Last Week - <span class="prev-hours">7</span>hrs</p>
-          </div>
-        </li>
-
-        <li class="activity exercise">
-          <div class="activity-card">
-            <header>
-              <h2>Exercise</h2>
-              <button aria-label="Open menu">
-                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
-              </button>
-            </header>
-            <p class="current"><span class="hours">4</span>hrs</p>
-            <p class="previous">Last Week - <span class="prev-hours">5</span>hrs</p>
-          </div>
-        </li>
-
-        <li class="activity social">
-          <div class="activity-card">
-            <header>
-              <h2>Social</h2>
-              <button aria-label="Open menu">
-                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
-              </button>
-            </header>
-            <p class="current"><span class="hours">5</span>hrs</p>
-            <p class="previous">Last Week - <span class="prev-hours">10</span>hrs</p>
-          </div>
-        </li>
-
-        <li class="activity self-care">
-          <div class="activity-card">
-            <header>
-              <h2>Self Care</h2>
-              <button aria-label="Open menu">
-                <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
-              </button>
-            </header>
-            <p class="current"><span class="hours">2</span>hrs</p>
-            <p class="previous">Last Week - <span class="prev-hours">2</span>hrs</p>
-          </div>
-        </li>
-        -->
 
       </ul>
     </main>
