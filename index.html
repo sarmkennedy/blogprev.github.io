@@ -19,22 +19,22 @@
       <article class="rounded-2xl flex flex-col overflow-hidden bg-navy-900 
                       md:row-span-2">
           <!--USER SECT.-->
-        <div class="flex flex-row md:flex-col items-center justify-center 
-                    md:justify-start md:items-start gap-4 md:gap-8 p-6 md:pb-20 bg-purple-brand rounded-2xl">
+        <div class="flex flex-row md:flex-col items-center justify-center bg-purple-brand rounded-2xl
+                    md:justify-start md:items-start gap-4 md:gap-8 p-8 md:pb-24">
           <!--AVATAR-->  
-          <img class="w-16 h-16 rounded-full border-2 border-white" alt="Photo of user" src="./Resources/images/image-jeremy.png"/>
+          <img class="w-16 h-16 md:w-18 md:h-18 rounded-full border-2 border-white" alt="Photo of user" src="./Resources/images/image-jeremy.png"/>
           <!--USER NAME-->  
-          <h1>
+          <h1 class="md:flex md:flex-col md:gap-2">
             <span class="block text-sm text-navy-200">Report for</span>
             <span class="block text-2xl md:text-4xl font-thin">Jeremy Robson</span>
           </h1>
         </div>
         <!--NAVIGATION-->
-        <nav class="timeframes flex flex-row justify-center items-center gap-12 p-6 
+        <nav class="timeframes flex flex-row justify-center items-center gap-12 p-6
                     md:items-start md:flex-col md:gap-4">
-          <button class="text-left text-navy-200 hover:text-white font-thin">Daily</button>
-          <button class="text-left text-navy-200 hover:text-white font-thin">Weekly</button>
-          <button class="text-left text-navy-200 hover:text-white font-thin">Monthly</button>
+          <button class="text-left font-thin text-navy-200 hover:text-white hover:cursor-pointer">Daily</button>
+          <button class="text-left font-thin text-navy-200 hover:text-white hover:cursor-pointer">Weekly</button>
+          <button class="text-left font-thin text-navy-200 hover:text-white hover:cursor-pointer">Monthly</button>
         </nav>
 
       </article>
@@ -45,10 +45,11 @@
                 md:grid md:grid-cols-3 md:grid-rows-2 md:col-span-3 row-span-2 md:gap-6 md:mt-0">
 
         <!--WORK-->
-        <li class="activity bg-work rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-work.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+        <li class="activity bg-work rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-work.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]
+                   md:pt-10 md:bg-[position:top_-8px_right_20px]">
           <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
-              <h2 class="text-titles font-bold">Work</h2>
+              <h2 class="text-titles font-bold md:font-reg">Work</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
@@ -62,10 +63,11 @@
         </li>
 
         <!--PLAY-->
-        <li class="activity bg-play rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-play.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+        <li class="activity bg-play rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-play.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]
+                  md:pt-10 md:bg-[position:top_-8px_right_20px]">
           <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
-              <h2 class="text-titles font-bold">Play</h2>
+              <h2 class="text-titles font-bold md:font-reg">Play</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
@@ -79,10 +81,11 @@
         </li>
 
         <!--STUDY-->
-        <li class="activity bg-study rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-study.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+        <li class="activity bg-study rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-study.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]
+                  md:pt-10 md:bg-[position:top_-8px_right_20px]">
           <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
-              <h2 class="text-titles font-bold">Study</h2>
+              <h2 class="text-titles font-bold md:font-reg">Study</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
@@ -96,10 +99,11 @@
         </li>
 
         <!--EXERCISE-->
-        <li class="activity bg-exercise rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-exercise.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+        <li class="activity bg-exercise rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-exercise.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]
+                  md:pt-10 md:bg-[position:top_-4px_right_20px]">
           <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
-              <h2 class="text-titles font-bold">Exercise</h2>
+              <h2 class="text-titles font-bold md:font-reg">Exercise</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
@@ -113,10 +117,11 @@
         </li>
         
         <!--SOCIAL-->
-         <li class="activity bg-social rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-social.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+         <li class="activity bg-social rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-social.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]
+                    md:pt-10 md:bg-[position:top_-8px_right_20px]">
           <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
-              <h2 class="text-titles font-bold">Social</h2>
+              <h2 class="text-titles font-bold md:font-reg">Social</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
@@ -130,10 +135,11 @@
         </li>
 
         <!--SELF CARE-->
-        <li class="activity bg-self-care rounded-2xl pt-8 md:pt-10 overflow-hidden bg-[url('../Resources/images/icon-self-care.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]">
+        <li class="activity bg-self-care rounded-2xl pt-8 overflow-hidden bg-[url('../Resources/images/icon-self-care.svg')] bg-no-repeat bg-[position:top_-10px_right_20px]
+                  md:pt-10 md:bg-[position:top_-14px_right_20px]">
           <div class="activity-card rounded-t-2xl p-8 bg-navy-900 hover:bg-purple-500 cursor-pointer flex flex-col gap-2 md:gap-6">
             <header class="flex flex-row justify-between items-center">
-              <h2 class="text-titles font-bold">Self Care</h2>
+              <h2 class="text-titles font-bold md:font-reg">Self Care</h2>
               <button aria-label="Open menu" class="opacity-70 hover:opacity-100 cursor-pointer">
                 <img src="./Resources/images/icon-ellipsis.svg" alt=""/>
               </button>
