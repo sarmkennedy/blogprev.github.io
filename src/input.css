@@ -24,4 +24,8 @@
     --font-weight-thin: 300;
     --font-weight-reg: 400;
     --font-weight-bold: 500;
+
+    /*BORDER RADII*/
+    --radius-md: 16px;
+    
 }
